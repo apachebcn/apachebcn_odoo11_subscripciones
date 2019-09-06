@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <menuitem name="Subscripciones" id="prr_subscripciones_menu" groups="base.group_system"/>
+
+    <record model="ir.actions.act_window" id="prr_subscripciones_datos_action">
+        <field name="name">Datos</field>
+        <field name="res_model">prr_subscripciones_datos</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="prr_subscripciones_datos_tree_view"/>
+    </record>
+    <menuitem sequence="1" name="Datos" id="prr_subscripciones_datos_menu" parent="prr_subscripciones_menu" action="prr_subscripciones_datos_action"/>
+
+    <record model="ir.actions.act_window" id="prr_subscripciones_clientes_action">
+        <field name="name">Clientes</field>
+        <field name="res_model">prr_subscripciones_clientes</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="prr_subscripciones_clientes_tree_view"/>
+    </record>
+    <menuitem sequence="2" name="Clientes" id="prr_subscripciones_clientes_menu" parent="prr_subscripciones_menu" action="prr_subscripciones_clientes_action"/>
+
+    <record model="ir.actions.act_window" id="prr_subscripciones_servicios_action">
+        <field name="name">Servicios</field>
+        <field name="res_model">prr_subscripciones_servicios</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="prr_subscripciones_servicios_tree_view"/>
+    </record>
+    <menuitem sequence="3" name="Servicios" id="prr_subscripciones_servicios_menu" parent="prr_subscripciones_menu" action="prr_subscripciones_servicios_action"/>
+
+</odoo>

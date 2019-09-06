@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+prr_subscripciones_clientes, prr_subscripciones_clientes,model_prr_subscripciones_clientes,group_prr_subscripciones_manager,1,1,1,1
+prr_subscripciones_datos, prr_subscripciones_datos,model_prr_subscripciones_datos,group_prr_subscripciones_manager,1,1,1,1
+prr_subscripciones_servicios, prr_subscripciones_servicios,model_prr_subscripciones_servicios,group_prr_subscripciones_manager,1,1,1,1
+

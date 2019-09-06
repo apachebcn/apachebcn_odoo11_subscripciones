@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <!-- VIEW TREE -->
+    <record id="prr_subscripciones_servicios_tree_view" model="ir.ui.view">
+        <field name="name">Servicios</field>
+        <field name="model">prr_subscripciones_servicios</field>
+        <field name="arch" type="xml">
+        <tree>
+            <field name="name"/>
+            <field name="descripcion"/>
+        </tree>
+        </field>
+    </record>
+
+</odoo>

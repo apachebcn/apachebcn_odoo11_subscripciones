@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+    <odoo>
+        <record id="group_prr_subscripciones" model="ir.module.category">
+            <field name="name">Pedro Reina Rojas Subscripciones</field>
+            <field name="description">Subscripciones</field>
+            <field name="sequence">20</field>
+        </record>
+
+        <record id="group_prr_subscripciones_manager" model="res.groups">
+            <field name="name">Pedro Reina Rojas Subscripciones Manager</field>
+            <field name="implied_ids" eval="[(4, ref('base.group_system'))]"/>
+            <field name="category_id" ref="group_prr_subscripciones"/>
+        </record>
+
+    </odoo>

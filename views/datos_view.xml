@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <!-- VIEW TREE -->
+    <record id="prr_subscripciones_datos_tree_view" model="ir.ui.view">
+        <field name="name">Datos</field>
+        <field name="model">prr_subscripciones_datos</field>
+        <field name="arch" type="xml">
+        <tree>
+            <field name="cliente_id"/>
+            <field name="servicio_id"/>
+            <field name="url"/>
+            <field name="username"/>
+            <field name="password"/>
+            <field name="observaciones"/>
+        </tree>
+        </field>
+    </record>
+
+    <!--VISTA FORM-->
+    <record id="prr_subscripciones_datos_form_view" model="ir.ui.view">
+        <field name="name">Datos</field>
+        <field name="model">prr_subscripciones_datos</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="cliente_id"/>
+                            <field name="servicio_id"/>
+                            <field name="url"/>
+                            <field name="username"/>
+                            <field name="password"/>
+                            <field name="observaciones"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>
